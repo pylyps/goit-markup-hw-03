@@ -22,15 +22,15 @@
   </head>
   <body>
     <header>
-      <!--Робимо верхню рамку-->
-      <div class="container navigation">
-        <nav class="navigation">
+      <div class="container">
+        <!--Робимо верхню рамку-->
+        <nav class="nav nav-portfolio">
           <a class="logo" href="./index.html" rel="noopener nofollow noreferrer"
             >Web<span class="logo-span">Studio</span></a
           >
-          <ul class="navigation">
+          <ul class="nav-list ul">
             <li class="li">
-              <a class="navigation-header li" href="./index.html">Студия</a>
+              <a class="navigation-header" href="./index.html">Студия</a>
             </li>
             <li class="li">
               <a class="navigation-header current" href="./portfolio.html"
@@ -41,9 +41,7 @@
               <a class="navigation-header" href="#">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <div class="contacts navigation">
-          <ul class="navigation">
+          <ul class="contacts-list ul">
             <li class="li">
               <a class="navigation-contacts" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -55,7 +53,7 @@
               >
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
 
@@ -64,26 +62,26 @@
     <main>
       <section class="container">
         <h1 hidden>Main</h1>
-        <ul>
-          <li class="li">
+        <ul class="li filters">
+          <li class="">
             <button type="button" class="button secondary current">Все</button>
           </li>
-          <li class="li">
+          <li class="">
             <button type="button" class="button secondary">Веб-сайт</button>
           </li>
-          <li class="li">
+          <li class="">
             <button type="button" class="button secondary">Приложения</button>
           </li>
-          <li class="li">
+          <li class="">
             <button type="button" class="button secondary">Дизайн</button>
           </li>
-          <li class="li">
+          <li class="">
             <button type="button" class="button secondary">Маркетинг</button>
           </li>
         </ul>
         <!-- Portfolio -->
-        <ul class="portfolio">
-          <li class="li">
+        <ul class="li portfolio card-set">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -98,7 +96,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="li">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -113,7 +111,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="li">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -128,7 +126,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="li">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -143,7 +141,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="li">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -158,7 +156,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="li">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -174,7 +172,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="li">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -189,7 +187,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="li">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -204,7 +202,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="li">
+          <li class="card-set-item">
             <figure class="portfolio-figure">
               <img
                 class="portfolio-image"
@@ -230,14 +228,14 @@
           >Web<span class="logo-footer">Studio</span></a
         >
         <address class="address">
-          <ul>
-            <li class="address-phisic li">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="address-digit li">
+          <ul class="li">
+            <li class="address-phisic">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="address-digit mail">
               <a class="navigation-address" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li class="address-digit li">
+            <li class="address-digit tel">
               <a class="navigation-address" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
