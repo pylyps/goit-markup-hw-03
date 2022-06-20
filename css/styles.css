@@ -9,6 +9,7 @@
     --color-bg-hero: #2F303A;
     --color-bg-secondary:#F5F4FA;
     --color-border:#EEEEEE;
+    --color-header-border: #ECECEC;
     
     /*Змінні для сітки  */
     --item-number: 3;
@@ -62,6 +63,8 @@ margin-right: auto;}
 
 /* Верхня рамка */
 
+.header{border-bottom: 1px solid var(--color-header-border);}
+
 .navigation-header {
     text-decoration: none;
     color: var(--color-text-main);
@@ -85,6 +88,7 @@ margin-right: auto;}
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+;
    
 
 }
@@ -156,6 +160,7 @@ align-items: center;
 .grey {
     background-color: var(--color-bg-hero);
     margin-bottom: 94px;
+    padding-top: 60px;
 }
 
 /* buttons */
@@ -217,10 +222,9 @@ align-items: center;
 } */
 
 /* Чем занимаемся */
-.work-list{margin-bottom: 94px;}
+.work{margin-bottom: 94px;}
 
 /* Команда */
-.team-container{padding-bottom: 94px;}
 
 .team-header{padding-top: 94px;
 margin-bottom: 50px;}
@@ -257,7 +261,8 @@ letter-spacing: 0.03em;}
 .work-head{margin-bottom: 50px;}
 
 /* Команда */
-.team{background-color: var(--color-bg-secondary);}
+.team{background-color: var(--color-bg-secondary);
+    padding-bottom: 94px;}
 .team-title{font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -289,7 +294,7 @@ letter-spacing: 0.03em;}
     text-decoration: none;}
 
 .footer{margin-bottom: 0%;
-padding-top: 60px;}
+}
 
 .mail{ display: block;
     margin-bottom: 9px;}
@@ -300,9 +305,11 @@ padding-top: 60px;}
 
 /* portfolio */
 
+.header-portfolio{margin-bottom: 94px;}
+
 /* Кнопки фільтрації */
 
-.nav-portfolio{margin-bottom: 94px;}
+
 .portfolio{margin-bottom: 94px;}
 
 .filters{display: flex;
@@ -313,7 +320,9 @@ margin-bottom: 34px;
 .button.seconadry{margin-right: 8px;}
 .button.seconadry:not(:last-child){margin: 0px;}
 
-.portfolio-figure{border:1px solid var(--color-border); 
+.portfolio-figure{border-bottom:1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
 }
 .portfolio-head{letter-spacing:0.06em;
     font-weight: 700;
