@@ -55,7 +55,9 @@ height:auto;
 
 /* контейнер */
 
-.container{width: 1200px;
+.container{box-sizing: border-box;    
+
+width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
@@ -87,11 +89,9 @@ margin-right: auto;}
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
-;
-   
-
+    letter-spacing: 0.03em;  
 }
+
 .logo .logo-span{color: var(--color-text-main);}
 .logo-footer{display: inline-flex;
     color: var(--color-button-prima);
@@ -103,6 +103,8 @@ align-items: center;
 }
 
 .nav-list{display: flex;
+    margin:0;
+    padding-left: 0;
 margin-left: 93px;}
 .nav-list .li + .li {margin-left: 50px;
 }
@@ -118,6 +120,8 @@ margin-left: 93px;}
 
 /* Contacts */
 .contacts-list{display: flex;
+    margin:0;
+    padding-left: 0;
     margin-left: auto;
 }
 .contacts-list .li + .li{margin-left: 50px;
@@ -148,19 +152,25 @@ align-items: center;
 
 }
 .hero-header {
+        max-width: 650px;
+        margin: 0 auto;
+    
+
     color: var(--color-button-prima);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-top: 200px;
-    padding-bottom: 30px;
+  
 }
 .grey {
     background-color: var(--color-bg-hero);
-    margin-bottom: 94px;
+    padding: 60px 0;
     padding-top: 60px;
+}
+.hero.grey{
+    padding: 200px 0;
 }
 
 /* buttons */
@@ -182,8 +192,7 @@ align-items: center;
     line-height: 1.88;
     letter-spacing: 0.06em;
     margin: auto;
-    margin-bottom: 200px;
-}
+ }
 
 .button.primary:hover,
 .button.primary:focus{background-color: var(--color-botton-hover);}
@@ -213,7 +222,7 @@ align-items: center;
     }
 
 /* Описание преимуществ */
-.advantage{margin-bottom: 94px;}
+.advantage{padding: 94px 0;}
 .advant-list, .work-list, .team-list{
     display: flex;
 }
@@ -222,17 +231,29 @@ align-items: center;
 } */
 
 /* Чем занимаемся */
-.work{margin-bottom: 94px;}
+.work{padding-bottom: 94px;}
 
 /* Команда */
 
-.team-header{padding-top: 94px;
+.card-set-item{
+background: #FFFFFF;
+   
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    }
+
+.team-header{
 margin-bottom: 50px;}
 
 .team-list{--item-number: 4;
 }
 
-
+.team-caption{padding: 30px;
+    background-color: var(--color-button-prima);
+  
+}
 
 .advant-title.work.team-header.team-title{color:var(--color-text-main);
 letter-spacing: 0.03em;}
@@ -242,13 +263,19 @@ letter-spacing: 0.03em;}
     letter-spacing: 0.03em;
 }
 
-.advant-title{font-weight: 700;
+.advant-title{margin: 0 0 10px 0;
+    
+    font-size: 14px;
+    font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;}
 
 .advant-text{font-weight: 400;
     line-height: 1.71;
+    color: var(--color-text-secondary)
    }
+
+.advant-item{margin-right: 30px;}
 
 /* Чем занимаемся */
 .work-head,
@@ -262,8 +289,11 @@ letter-spacing: 0.03em;}
 
 /* Команда */
 .team{background-color: var(--color-bg-secondary);
+    padding-top: 94px;
     padding-bottom: 94px;}
-.team-title{font-weight: 500;
+.team-title{margin: 0 0 10px 0;
+    
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -299,35 +329,36 @@ letter-spacing: 0.03em;}
 .mail{ display: block;
     margin-bottom: 9px;}
 
-.tel{padding-bottom: 60px;}
+
 
 
 
 /* portfolio */
 
-.header-portfolio{margin-bottom: 94px;}
+.section{padding: 94px 0;}
 
 /* Кнопки фільтрації */
 
-
-.portfolio{margin-bottom: 94px;}
 
 .filters{display: flex;
 justify-content: center;
 margin-bottom: 34px;
 }
 
-.button.seconadry{margin-right: 8px;}
-.button.seconadry:not(:last-child){margin: 0px;}
+.button.secondary{margin-right: 8px;}
+.button.secondary:not(:last-child){margin: 0px;}
 
-.portfolio-figure{border-bottom:1px solid var(--color-border);
+.portfolio-figure{padding: 20px 24px;
+    border-bottom:1px solid var(--color-border);
     border-left: 1px solid var(--color-border);
     border-right: 1px solid var(--color-border);
 }
-.portfolio-head{letter-spacing:0.06em;
+.portfolio-head{margin-bottom: 4px;
+    letter-spacing:0.06em;
     font-weight: 700;
     font-size: 18px;
-    line-height: 2;} 
+    line-height: 2;
+} 
 .portfolio-class{font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
