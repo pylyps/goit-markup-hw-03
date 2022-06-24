@@ -165,12 +165,21 @@ align-items: center;
   
 }
 .grey {
-    background-color: var(--color-bg-hero);
     padding: 60px 0;
     padding-top: 60px;
+    
+    background-color: var(--color-bg-hero);
+   
 }
+
+
 .hero.grey{
     padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero.jpg);
+    
+    
+        background-size: cover;
+    
 }
 
 /* buttons */
@@ -279,7 +288,8 @@ letter-spacing: 0.03em;}
 
 /* Чем занимаемся */
 .work-head,
-.team-header{font-weight: 700;
+.team-header,
+.clients-header{font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -304,7 +314,16 @@ letter-spacing: 0.03em;}
     text-align: center;
     }
 
+    /* Клиенты */
 
+.clients-header{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.clients-list{
+    --item-number: 6;
+}
 
 /* Футтер */
 
@@ -329,8 +348,12 @@ letter-spacing: 0.03em;}
 .mail{ display: block;
     margin-bottom: 9px;}
 
+.footer-social{
+    color: var(--color-button-prima);
+    line-height: 1.14em;   
+}
 
-
+.social-list
 
 
 /* portfolio */
